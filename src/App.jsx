@@ -6,14 +6,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Contador from './componentes/Contador';
 
 function App() {
-  
+
 
   return (
    <Container>
-   <Titulo></Titulo>
+    <Titulo subtituloNuevo='Este subitutlo fue creado con props' ></Titulo>      {/* Agrego un props  */}
    <Contador></Contador>
    </Container>
-    
+
     )
 }
 

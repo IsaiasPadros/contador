@@ -1,12 +1,18 @@
+import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 
 
 const Contador = () => {
+
+    const [numero, setNumero] = useState(0);
+
+
+
     return (
         <section>
             <h3>CONTADOR</h3>
-            <h3>10</h3>
-            <Button variant="primary">Primary</Button>{' '}
+            <h3>{numero}</h3>
+            <Button variant="primary" onClick={()=> setNumero(numero +1 )}>+1</Button>{' '}
         </section>
     );
 };
